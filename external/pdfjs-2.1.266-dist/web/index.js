@@ -28,9 +28,9 @@ document.addEventListener("adobe_dc_view_sdk.ready", function () {
     /* Initialize the AdobeDC View object */
     var adobeDCView = new AdobeDC.View({
         /* Pass your registered client id */
-        clientId: "<YOUR_CLIENT_ID>",
+        clientId: "0729d784a82f43b08b3b5cf9d2365e71",
         /* Pass the div id in which PDF should be rendered */
-        divId: "adobe-dc-view",
+        divId: "viewer",
     });
 
     /* Invoke the file preview API on Adobe DC View object */
@@ -39,7 +39,7 @@ document.addEventListener("adobe_dc_view_sdk.ready", function () {
         content: {
             /* Location of file where it is hosted */
             location: {
-                url: "https://s7d3.scene7.com/is/content/AshleyFurniture/2022-AFI-CSR-Report",
+                url: "https://ashleystage.scene7.com/is/content/AshleyStage/ecatalogs/pdfs/2022-AFI-Rugs-Catalog.pdf",
                 /*
                 If the file URL requires some additional headers, then it can be passed as follows:-
                 headers: [
