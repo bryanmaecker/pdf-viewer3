@@ -5132,7 +5132,7 @@ var defaultOptions = {
     kind: OptionKind.VIEWER
   },
   defaultUrl: {
-    value: 'https://s7d3.scene7.com/is/content/AshleyFurniture/2022-AFI-CSR-Report',
+    value: 'https://s7d3.scene7.com/is/content/AshleyFurniture/ecatalogs/pdfs/2022-AFI-CSR-Report.pdf',
     kind: OptionKind.VIEWER
   },
   defaultZoomValue: {
