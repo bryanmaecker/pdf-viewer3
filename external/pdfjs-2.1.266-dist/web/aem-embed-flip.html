@@ -20,24 +20,18 @@
 </head>
 
 
-  <body tabindex="1" class="loadingInProgress">
-    <div id="outerContainer">
-	    <div id="mainContainer">
-		<div id="viewerContainer" tabindex="0">
-			<div id="viewer" class="bookViewer" style="width: 800px;"></div>
-		</div>
-	    </div>
-    </div>
-<script src="https://documentservices.adobe.com/view-sdk/viewer.js"></script>
+  <body>
+	  
+<div id="adobe-dc-view"></div>
+<script src="https://documentcloud.adobe.com/view-sdk/viewer.js"></script>
 <script type="text/javascript">
 	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
-		var adobeDCView = new AdobeDC.View({clientId: "<YOUR_CLIENT_ID>", divId: "viewer"});
+		var adobeDCView = new AdobeDC.View({clientId: "<YOUR_CLIENT_ID>", divId: "adobe-dc-view"});
 		adobeDCView.previewFile({
-			content:{location: {url: "compressed.tracemonkey-pldi-09.pdf"}},
-			metaData:{fileName: "Bodea Brochure.pdf"}
-		}, {embedMode: "IN_LINE"});
+			content:{promise: "https://documentservices.adobe.com/view-sdk-demo/PDFs/Bodea Brochure.pdf"},
+			metaData:{fileName: "<FILE_NAME>"}
+		}, {defaultViewMode: "FIT_WIDTH", showAnnotationTools: false});
 	});
-</script>
-	
+</script>	
 </body>
 </html>
