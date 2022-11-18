@@ -33,7 +33,7 @@
 	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
 		var adobeDCView = new AdobeDC.View({clientId: "<YOUR_CLIENT_ID>", divId: "viewer"});
 		adobeDCView.previewFile({
-			content:{location: {url: "https://documentservices.adobe.com/view-sdk-demo/PDFs/Bodea Brochure.pdf"}},
+			content:{location: {url: "compressed.tracemonkey-pldi-09.pdf"}},
 			metaData:{fileName: "Bodea Brochure.pdf"}
 		}, {embedMode: "IN_LINE"});
 	});
