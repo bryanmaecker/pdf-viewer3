@@ -1,13 +1,33 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Untitled Document</title>
+<html dir="ltr" mozdisallowselectionprint>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="google" content="notranslate">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PDF.js viewer</title>
+    <link rel="stylesheet" href="viewer.css">
+    <link rel="resource" type="application/l10n" href="locale/locale.properties">
+    <script src="../build/pdf.js"></script>
+    <script src="viewer.js"></script>
+    <script src="index.js"></script>
+
+    <!-- $FB: additional files included -->
+    <script src="../../jquery-3.4.1.min.js"></script>
+    <script src="../../turn.min.js"></script>
+    <link rel="stylesheet" href="../../../pdf-turn/pdf-turn.css">
+    <script src="../../../pdf-turn/pdf-turn.js"></script>
+
 </head>
 
-<body>
-	
-<div id="viewer" class="bookViewer" style="width: 800px;"></div>
+
+  <body tabindex="1" class="loadingInProgress">
+    <div id="outerContainer">
+	    <div id="mainContainer">
+		<div id="viewerContainer" tabindex="0">
+			<div id="viewer" class="bookViewer" style="width: 800px;"></div>
+		</div>
+	    </div>
+    </div>
 <script src="https://documentservices.adobe.com/view-sdk/viewer.js"></script>
 <script type="text/javascript">
 	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
