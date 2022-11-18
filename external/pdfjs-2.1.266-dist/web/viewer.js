@@ -5132,7 +5132,7 @@ var defaultOptions = {
     kind: OptionKind.VIEWER
   },
   defaultUrl: {
-    value: 'compressed.tracemonkey-pldi-09.pdf',
+    value: 'https://s7d3.scene7.com/is/content/AshleyFurniture/2022-AFI-CSR-Report',
     kind: OptionKind.VIEWER
   },
   defaultZoomValue: {
